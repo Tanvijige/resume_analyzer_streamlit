@@ -32,7 +32,7 @@ def extract_text_from_pdf(file):
     return text
 def analyze_resume(text):
     text = text[:1500]
-    summary = query(f"Summarize this resume:\n{text}")
+    summary = query(f"Summarize this PDF:\n{text}")
     # skills = query(f"Extract key skills from this resume:\n{text}")
     # suggestions = query(f"Give improvement suggestions for this resume:\n{text}")
     # return summary, skills, suggestions
