@@ -38,11 +38,11 @@ def analyze_resume(text):
     # return summary, skills, suggestions
     return summary
 # ---------------- UI ---------------- #
-st.set_page_config(page_title="AI Resume Analyzer", page_icon="📄")
-st.title("📄 AI PDF Analyzer")
-st.markdown("Upload your PDF and get smart insights")
+st.set_page_config(page_title="AI PDF Summarizer", page_icon="📄")
+st.title("📄 AI PDF Summarizer")
+st.markdown("Upload your PDF and get a concise summary")
 uploaded_file = st.file_uploader("Upload PDF", type=["txt", "pdf"])
-if st.button("🚀 Analyze PDF"):
+if st.button("🚀 Summarize PDF"):
     if uploaded_file is None:
         st.warning("Please upload a PDF first!")
     else:
